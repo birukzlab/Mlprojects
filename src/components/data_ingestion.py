@@ -26,6 +26,10 @@ class DataIngestion:
             df=pd.read_csv('notebook/data/StudentsPerformance.csv')
             logging.info('Read the dataset as dataframe')
 
+            # Rename columns to align with the app's expected structure
+            df.columns = ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch',
+                          'test_preparation_course', 'math_score', 'reading_score', 'writing_score']
+
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
 
