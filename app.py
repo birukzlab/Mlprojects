@@ -1,4 +1,4 @@
-from flask import Flask,request,render_template
+from flask import Flask,request,render_template,jsonify
 import numpy as np
 import pandas as pd
 
@@ -10,6 +10,18 @@ application=Flask(__name__)
 app=application
 
 ## Route for a home page
+
+@app.route('/visualization_data')
+def visualization_data():
+    # Example: Load your dataset here or use a preloaded dataset
+    df = pd.read_csv('artifacts/raw.csv')
+    
+    # Calculate the average scores by race_ethnicity, for example
+    avg_scores = df.groupby('race_ethnicity')['math_score'].mean().reset_index()
+    avg_scores_dict = avg_scores.to_dict(orient='records')
+    
+    # Return this data as JSON
+    return jsonify(avg_scores_dict)
 
 @app.route('/')
 def index():
