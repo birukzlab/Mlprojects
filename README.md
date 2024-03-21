@@ -30,20 +30,21 @@ Visual Studio and Jupyter notebook: For exploratory data analysis and model prot
 
 Clone the repository:
 
-git clone https://github.com/birukzlab/Mlprojects.git
+<git clone https://github.com/birukzlab/Mlprojects.git>
+
 
 Navigate to the project directory:
 
-cd Mlprojects
+<cd Mlprojects>
 
 Install the required packages:
 
-pip install -r requirements.txt
+<pip install -r requirements.txt>
 
 
 Run the Flask application:
 
-python3 app.py
+<python3 app.py>
 
 ## Usage
 
