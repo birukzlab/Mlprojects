@@ -2,7 +2,8 @@
 
 ## Student Performance Predictor using Machine Learning
 
-![Project Screenshot](/images/images/Screen Shot 2024-03-21 at 1.53.10 PM.png)
+![Project Screenshot](/images/images/image_1.png)
+
 
 
 
