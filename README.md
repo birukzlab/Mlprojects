@@ -2,6 +2,11 @@
 
 ## Student Performance Predictor using Machine Learning
 
+![Project Screenshot](/images/images/Screen Shot 2024-03-21 at 1.53.10 PM.png)
+
+
+
+
 The Student Performance Predictor is a demonstration website built to showcase the potential of using machine learning to predict student math scores based on various demographic and educational factors. Utilizing Python, Scikit-learn, and Flask, this project serves as a foundational exploration into how data science can be applied in educational settings.
 
 ## Overview
