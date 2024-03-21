@@ -2,7 +2,7 @@
 
 ## Student Performance Predictor using Machine Learning
 
-![Project Screenshot](/images/images/image_1.png)
+![Project Screenshot](/images/image_1.png)
 
 
 
